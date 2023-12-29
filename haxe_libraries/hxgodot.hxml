@@ -1,8 +1,8 @@
-# @install: lix --silent download "gh://github.com/HxGodot/hxgodot#021911de05bbee848c643c441981331fd014bb1e" into hxgodot/1.0.0-beta/github/021911de05bbee848c643c441981331fd014bb1e
-# @run: haxelib run-dir hxgodot "${HAXE_LIBCACHE}/hxgodot/1.0.0-beta/github/021911de05bbee848c643c441981331fd014bb1e"
+# @install: lix --silent download "gh://github.com/HxGodot/hxgodot#45a6c08640a188abed8c42a12c95693de3f35ba1" into hxgodot/1.0.0-beta/github/45a6c08640a188abed8c42a12c95693de3f35ba1
+# @run: haxelib run-dir hxgodot "${HAXE_LIBCACHE}/hxgodot/1.0.0-beta/github/45a6c08640a188abed8c42a12c95693de3f35ba1"
 -lib compiletime
 -lib hxcpp
--cp ${HAXE_LIBCACHE}/hxgodot/1.0.0-beta/github/021911de05bbee848c643c441981331fd014bb1e/src/
+-cp ${HAXE_LIBCACHE}/hxgodot/1.0.0-beta/github/45a6c08640a188abed8c42a12c95693de3f35ba1/src/
 -D hxgodot=1.0.0-beta
 --macro include('godot.variant', true)
 -cp src

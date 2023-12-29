@@ -14,6 +14,40 @@
       "command": "scons",
       "args": ["platform=windows", "target=release"],
       "problemMatcher": []
+    },
+    {
+      "label": "Update hxgodot",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "haxelib hxgodot",
+        "hxgodot copy_buildfiles",
+        "hxgodot generate_bindings"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "haxelib hxgodot",
+      "type": "shell",
+      "command": "haxelib",
+      "args": ["git", "hxgodot", "https://github.com/HxGodot/hxgodot.git"],
+      "hide": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "hxgodot copy_buildfiles",
+      "type": "shell",
+      "command": "haxelib",
+      "args": ["run", "hxgodot", "copy_buildfiles"],
+      "hide": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "hxgodot generate_bindings",
+      "type": "shell",
+      "command": "haxelib",
+      "args": ["run", "hxgodot", "generate_bindings"],
+      "hide": true,
+      "problemMatcher": []
     }
   ]
 }
