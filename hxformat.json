@@ -1,0 +1,83 @@
+{
+  "indentation": {
+    "character": "  "
+  },
+  "wrapping": {
+    "maxLineLength": 80,
+    "implementsExtends": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLineAfterFirst",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    },
+    "methodChain": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLineAfterFirst",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    },
+    "callParameter": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLine",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    },
+    "functionSignature": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLine",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    },
+    "anonFunctionSignature": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLine",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    },
+    "typeParameter": {
+      "defaultWrap": "fillLine",
+      "rules": [
+        {
+          "type": "onePerLine",
+          "conditions": [{ "cond": "exceedsMaxLineLength" }]
+        }
+      ]
+    }
+  },
+  "sameLine": {
+    "ifBody": "same",
+    "elseBody": "same"
+  },
+  "whitespace": {
+    "typeHintColonPolicy": "after",
+    "bracesConfig": {
+      "anonTypeBraces": {
+        "openingPolicy": "around",
+        "closingPolicy": "before"
+      },
+      "objectLiteralBraces": {
+        "openingPolicy": "around",
+        "closingPolicy": "before"
+      },
+      "typedefBraces": {
+        "openingPolicy": "around",
+        "closingPolicy": "before"
+      }
+    }
+  }
+}
